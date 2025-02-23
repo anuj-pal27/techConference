@@ -1,58 +1,76 @@
-# create-svelte
+# Github Project Structure
 
-Everything you need to build a Svelte library, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+techConference/
+│── src/              
+│   ├── lib/          # Reusable components and utilities
+│   │   ├── Navbar.svelte  # Navigation bar component
+│   ├── routes/       # Pages and routes
+│   │   ├── about/    # About page
+│   │   │   ├── +page.svelte
+│   │   ├── sponsors/ # Sponsors page
+│   │   │   ├── +page.svelte
+│   │   ├── contact/  # Contact page
+│   │   │   ├── +page.svelte
+│   │   ├── speakers/ # Speakers page
+│   │   │   ├── +page.svelte
+│   │   ├── +page.svelte  # Homepage
+│   │   ├── +layout.svelte  # Layout file
+│── static/           # Static assets (images, logos, etc.)
+│── package.json      # Project dependencies and scripts
+│── svelte.config.js  # SvelteKit configuration
+│── README.md         # Project documentation
+│── .gitignore        # Files to ignore in version control
 
-Read more about creating a library [in the docs](https://svelte.dev/docs/kit/packaging).
+# 🎤 TechConference Website
 
-## Creating a project
+## 📌 Overview
+This repository contains the **TechConference** website built with **SvelteKit** and **TailwindCSS**. The project features a modern, responsive UI with dynamic routing.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## 🚀 Features Implemented
+- 📌 **Dynamic Navigation Bar**  
+- 📌 **Speakers, Sponsors, About, and Contact pages**  
+- 📌 **Responsive UI using TailwindCSS**  
+- 📌 **Modular Svelte components**  
+- 📌 **SEO-friendly page routing**  
 
-```bash
-# create a new project in the current directory
-npx sv create
+## 🛠️ Setup Instructions
+Follow these steps to run the project locally.
 
-# create a new project in my-app
-npx sv create my-app
-```
+### 1️⃣ Clone the Repository
+```sh
+git clone https://github.com/yourusername/techConference.git
+cd techConference
 
-## Developing
+2️⃣ Install Dependencies
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+    npm install
 
-```bash
-npm run dev
+3️⃣ Run the Development Server
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+    npm run dev
 
-Everything inside `src/lib` is part of your library, everything inside `src/routes` can be used as a showcase or preview app.
+Now, open http://localhost:5173 in your browser to view the website.
 
-## Building
+📜 Usage Guide
 
-To build your library:
+The navigation bar dynamically updates to highlight the active page.
+The mobile menu automatically adjusts based on screen size.
+You can customize the content inside each route by modifying the corresponding +page.svelte files.
 
-```bash
-npm run package
-```
+🎨 Tech Stack
+Frontend: SvelteKit, TailwindCSS
+Styling: TailwindCSS for responsive UI
+Routing: SvelteKit’s built-in routing system
 
-To create a production version of your showcase app:
+🤝 Contributing
+If you'd like to contribute:
 
-```bash
-npm run build
-```
+Fork the repository
+Create a feature branch (git checkout -b feature-name)
+Commit changes (git commit -m "Added new feature")
+Push to GitHub (git push origin feature-name)
+Create a Pull Request
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
-
-## Publishing
-
-Go into the `package.json` and give your package the desired name through the `"name"` option. Also consider adding a `"license"` field and point it to a `LICENSE` file which you can create from a template (one popular option is the [MIT license](https://opensource.org/license/mit/)).
-
-To publish your library to [npm](https://www.npmjs.com):
-
-```bash
-npm publish
-```
+📞 Contact
+For any queries, feel free to reach out at: 📧 Email: anujpal27669@gmail.com
+🌐 Website: https://tech-conference-theta.vercel.app/
