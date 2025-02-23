@@ -1,28 +1,3 @@
-#Project Structure
-
-techConference/
-│── src/              
-│   ├── lib/          # Reusable components and utilities
-
-│   │   ├── Navbar.svelte  # Navigation bar component
-
-│   ├── routes/       # Pages and routes
-
-│   │   ├── about/    # About page
-│   │   │   ├── +page.svelte
-│   │   ├── sponsors/ # Sponsors page
-│   │   │   ├── +page.svelte
-│   │   ├── contact/  # Contact page
-│   │   │   ├── +page.svelte
-│   │   ├── speakers/ # Speakers page
-│   │   │   ├── +page.svelte
-│   │   ├── +page.svelte  # Homepage
-│   │   ├── +layout.svelte  # Layout file
-│── static/           # Static assets (images, logos, etc.)
-│── package.json      # Project dependencies and scripts
-│── svelte.config.js  # SvelteKit configuration
-│── README.md         # Project documentation
-│── .gitignore        # Files to ignore in version control
 
 # 🎤 TechConference Website
 
