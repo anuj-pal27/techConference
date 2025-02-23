@@ -3,8 +3,11 @@
 techConference/
 │── src/              
 │   ├── lib/          # Reusable components and utilities
+
 │   │   ├── Navbar.svelte  # Navigation bar component
+
 │   ├── routes/       # Pages and routes
+
 │   │   ├── about/    # About page
 │   │   │   ├── +page.svelte
 │   │   ├── sponsors/ # Sponsors page
