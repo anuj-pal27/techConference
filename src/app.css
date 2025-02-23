@@ -1,0 +1,58 @@
+@import "tailwindcss";/* Light mode (default) */
+:root {
+  --bg-main: white;
+  --bg-secondary: #f8f9fa;
+  --text-main: #333;
+  --text-secondary: #555;
+  --gradient: linear-gradient(to right, #4f46e5, #9333ea);
+}
+
+/* Dark mode */
+.dark {
+  --bg-main: #121212;
+  --bg-secondary: #1e1e1e;
+  --text-main: #e0e0e0;
+  --text-secondary: #bbbbbb;
+  --gradient: linear-gradient(to right, #1f1f1f, #3b3b3b);
+}
+
+body {
+  background: var(--bg-main);
+  color: var(--text-main);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hero Section */
+.hero-section {
+  background: var(--gradient);
+  color: white;
+}
+
+.dark .hero-section {
+  background: var(--gradient);
+  color: white;
+}
+
+/* Cards */
+.card {
+  background: var(--bg-secondary);
+  color: var(--text-main);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.dark .card {
+  background: var(--bg-secondary);
+  color: var(--text-main);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+button {
+  transition: all 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
