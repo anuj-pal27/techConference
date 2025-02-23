@@ -1,4 +1,4 @@
-# Github Project Structure
+#Project Structure
 
 techConference/
 │── src/              
